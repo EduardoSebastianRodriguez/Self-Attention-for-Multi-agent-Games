@@ -1,0 +1,14 @@
+# Shared dependencies for the figures in the paper. Each experiment subfolder
+# may need extras (DP-iLQR builds a Cython extension; the Robotarium simulator
+# additionally needs cvxopt; IV-C needs BenchMARL/VMAS). See per-subfolder
+# READMEs.
+
+torch>=1.13
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.6
+sympy>=1.11
+tqdm
+cython>=0.29
+# Robotarium simulator constraint solver
+cvxopt>=1.3

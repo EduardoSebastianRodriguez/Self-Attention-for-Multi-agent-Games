@@ -1,0 +1,40 @@
+[project]
+name = "dpilqr"
+version = "0.1.0"
+description = "Implementation of Distributed Potential iLQR for scalable cooperative multi-agent navigation."
+authors = [
+    {name="Zach Williams", email="zjwilliams20@gmail.com"}
+]
+license = {file="LICENSE.txt"}
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "sympy",
+    "cython",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ipympl",
+    "seaborn",
+    "jupyterlab",
+    "jupyterlab-git",
+    "jupyterlab-horizon-theme",
+    "networkx",
+    "ipdb",
+    "pip-tools",
+]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm", "cython"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["dpilqr"]
+
+[project.urls]
+homepage = "https://github.com/labicon/dp-ilqr"
