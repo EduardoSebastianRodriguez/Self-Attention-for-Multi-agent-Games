@@ -15,7 +15,7 @@ instructions.
 | ------ | ------------- | ---------- |
 | [`experiments/iv_a_lqr/`](experiments/iv_a_lqr) | IV-A: Distributed linear quadratic regulation | **Fig. 2** |
 | [`experiments/iv_b_navigation/`](experiments/iv_b_navigation) | IV-B: Multi-agent nonlinear navigation | **Figs. 3, 4, 5** and **Table I** |
-| [`experiments/iv_c_benchmarl/`](experiments/iv_c_benchmarl) | IV-C: Pursuit-evasion in BenchMARL | **Figs. 6, 7** *(placeholder — code to be added)* |
+| [`experiments/iv_c_benchmarl/`](experiments/iv_c_benchmarl) | IV-C: Pursuit-evasion in BenchMARL | **Figs. 6, 7** |
 | [`experiments/iv_d_robotarium/`](experiments/iv_d_robotarium) | IV-D: Zero-shot Robotarium deployment | **Figs. 8, 9** |
 
 ## Quick reproduction (figures only)
@@ -59,7 +59,7 @@ Robotarium simulator needs `cvxopt`). Refer to each subfolder's README.
 └── experiments/
     ├── iv_a_lqr/            ← Fig. 2
     ├── iv_b_navigation/     ← Figs. 3, 4, 5 + Table I (bundles a copy of dp-ilqr)
-    ├── iv_c_benchmarl/      ← placeholder for IV-C (MAPPO / MADDPG)
+    ├── iv_c_benchmarl/      ← Figs. 6, 7 (bundles a modified fork of BenchMARL)
     └── iv_d_robotarium/     ← Figs. 8, 9 (bundles a copy of robotarium_python_simulator)
 ```
 
@@ -73,7 +73,11 @@ Robotarium simulator needs `cvxopt`). Refer to each subfolder's README.
   `experiments/iv_d_robotarium/rps/`. © Georgia Institute of Technology
   (MIT, <https://github.com/robotarium/robotarium_python_simulator>).
   License at `experiments/iv_d_robotarium/LICENSE_rps.txt`.
-- The IV-D pursuit-evasion scenario is a light modification of the
+- The Sec. IV-C experiment is built on **BenchMARL**, bundled as a modified
+  fork under `experiments/iv_c_benchmarl/benchmarl/`. © Meta Platforms, Inc.
+  (MIT, <https://github.com/facebookresearch/BenchMARL>). License at
+  `experiments/iv_c_benchmarl/LICENSE_benchmarl.txt`.
+- The IV-C and IV-D pursuit-evasion scenarios are a light modification of the
   Simple Tag environment from
   [VMAS](https://github.com/proroklab/VectorizedMultiAgentSimulator) ©
   ProrokLab (MIT).

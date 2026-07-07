@@ -1,0 +1,19 @@
+# Core dependencies for the Sec. IV-C BenchMARL pursuit-evasion experiment.
+# Tested with Python 3.11. Pins match the environment used for the paper.
+#
+# BenchMARL itself is bundled in this folder and installed with
+# `pip install -e .`; the packages below are its runtime dependencies.
+
+torch==2.5.1
+torchvision==0.20.1
+torchrl==0.9.2
+tensordict==0.9.1
+vmas==1.4.3
+torch_geometric==2.6.1
+torch_cluster==1.6.3
+hydra-core==1.3.2
+numpy
+matplotlib
+
+# Optional: only needed for the aggregate rliable plots in eval_results.py
+# marl_eval
